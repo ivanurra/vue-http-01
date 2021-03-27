@@ -77,9 +77,9 @@ export default {
       })
       .then(response => {
         if (response.ok) {
-
+          // response
         } else {
-          thorw new Error('Could not save data');
+          throw new Error('Could not save data');
         }
       }).catch(error => {
         console.log(error);
